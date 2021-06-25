@@ -1,47 +1,175 @@
-body{
-    background-color: khaki;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-p{
-    font-size: 12px;
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
-.container{
-    width: 800px;
-    background-color: lightcyan;
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*start code*/
+
+body {
+    background-color: whitesmoke;
     margin-top: 20px;
-    margin-left: 250px;
 }
-.navigasi{
-    display: inline-block;
-    font-style: italic;
-    background-color: ivory;
-    background-size: 200;
+.container {
+    padding-left: 10px;
+    width: 800px;
+    margin: auto;
+    background-color: white;
 }
-/*
-.utama{
-    width:  800px;
-    heighscroll-margin-right: 20px
-.topik{
-    width: 200px;
-    height: 500px;
-    background-color: brown;
-    margin-top: 200px;
+.header h1{
+    padding-top: 5px;
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.headline{
-    width: 500px;
-    height: 500px;
-    background-color: yellow;
-    margin-top: -10px;
+.header li {
+    display: inline;
     
 }
-.login {
-    display: inline-block;
-    background-size: auto;
-    background-color: tomato;
-    size: 500px;
+.header ul{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.daftar {
-    display: inline-block;
-    background-size: auto;
-    background-color: tomato;
-    size: 500px;
-}*/
+
+.header a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+}
+.header a:hover{
+    background-color: lightgrey;
+    
+}
