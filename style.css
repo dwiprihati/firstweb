@@ -138,38 +138,138 @@ table {
 /*start code*/
 
 body {
-    background-color: whitesmoke;
+    background-color: lightpink;
     margin-top: 20px;
 }
 .container {
-    padding-left: 10px;
+    
     width: 800px;
     margin: auto;
     background-color: white;
 }
-.header h1{
+.judul{
     padding-top: 5px;
+    padding-left: 10px;
     color: black;
     font-size: 45px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.header li {
-    display: inline;
-    
-}
-.header ul{
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
+.header ul li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left : 10px;
+    margin-bottom: 10px;
 }
 
 .header a{
-    margin-left: 5px;
+    font-size: 15px;
     text-decoration: none;
-    color: black;
+    color: seagreen;
+    padding: 2px;
 }
 .header a:hover{
-    background-color: lightgrey;
     
+    background-color: papayawhip;    
+}
+.hero {
+padding: 0;
+height: 250px;
+background-image: url(img.jpg);
+background-size: cover;
+border-top: sandybrown 2px solid;
+border-bottom: tomato 2px solid;
+}
+.content {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.artikel h2{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.artikel .penulis {
+    padding-top: 5px;
+    padding-bottom: 12px;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+a{
+    pointer-events: auto;
+}
+.artikel {
+    box-sizing: border-box;
+    width: 500px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    word-spacing: 5px;
+    float: left;
+    line-height: 20px;
+    
+}
+.footer{
+    width: auto;
+    height: 20px;
+    background-color: black;
+    color: white;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+.biodata {
+    width: 250px;
+    float: right;
+    border-bottom: brown 2pt solid;
+    border-bottom-right-radius: 20px;
+    padding-right: 5px;
+}
+.biodata .penulis h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.biodata .penulis img{
+    float: left;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    
+}
+.biodata .penulis p{
+    display: block;
+    font: 14px sans-serif;
+    padding: 15px 5px 20px 0;
+    
+}
+.login{
+    position: absolute;
+    width: 200px;
+}
+
+
+
+
+/*clearfix*/
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
